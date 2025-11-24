@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: $color-indigo;
+    }
+
+    p {
+        color: $color-gray-dark;
+        margin-bottom: 1rem;
+    }
+
+    .contact-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+
+        a {
+            color: $color-gray-dark;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $color-indigo;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as *;
 
 .navbar {
     display: flex;
@@ -6,7 +6,13 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: $color-white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .menu-toggle {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: $color-indigo;
+    }
 
     h1 {
         font-size: 1.5rem;
@@ -20,12 +26,37 @@
 
         a {
             text-decoration: none;
-            color: $color-gray;
+            color: $color-indigo;
             transition: color 0.3s;
 
             &:hover {
                 color: $color-indigo;
             }
+        }
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            padding: 0;
+        }
+
+        &.open ul {
+            display: flex;
         }
     }
 }

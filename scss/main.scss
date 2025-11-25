@@ -9,3 +9,24 @@ body {
     font-family: 'Inter', sans-serif;
     transition: background-color 0.5s;
 }
+
+html,
+body {
+    overflow-y: auto !important;
+    height: auto !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    word-wrap: break-word;
+}

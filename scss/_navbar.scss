@@ -1,4 +1,4 @@
-@use "variables" as *;
+@import "variables";
 
 .navbar {
     display: flex;
@@ -20,7 +20,7 @@
 
         a {
             text-decoration: none;
-            color: $color-gray-dark;
+            color: $color-gray;
             transition: color 0.3s;
 
             &:hover {

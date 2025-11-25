@@ -11,7 +11,7 @@
     }
 
     p {
-        color: $color-gray-dark;
+        color: $color-gray;
         margin-bottom: 1rem;
     }
 
@@ -20,9 +20,10 @@
         justify-content: center;
         gap: 1rem;
         font-size: 2rem;
+        color: $color-indigo;
 
-        a {
-            color: $color-gray-dark;
+        a i {
+            color: $color-gray;
             transition: color 0.3s;
 
             &:hover {

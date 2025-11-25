@@ -1,9 +1,8 @@
-@use "variables" as *;
+@use "variables";
 @use "navbar";
 @use "about";
 @use "projects";
 @use "contact";
-
 
 body {
     margin: 0;

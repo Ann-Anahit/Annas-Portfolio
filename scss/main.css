@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
+  background-color: #d1f8ff;
   /* --- MOBILE --- */
 }
 .navbar h1 {
@@ -45,14 +45,19 @@
   .navbar .menu-toggle {
     display: block;
     flex: 0 0 auto;
+    order: 2;
   }
   .navbar ul {
     display: none;
     flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    padding: 0;
-    order: 3;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: 0;
+    align-self: flex-end;
+    margin-left: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
   }
   .navbar.open ul {
     display: flex;
@@ -100,7 +105,7 @@
 
 .projects-section {
   padding: 4rem 2rem;
-  background-color: #8b9c9e;
+  background-color: #d1f8ff;
   text-align: left;
 }
 .projects-section h2 {

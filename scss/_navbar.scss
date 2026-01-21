@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: $color-white;
+    background-color: $color-turquoise;
 
     h1 {
         font-size: 1.5rem;
@@ -36,10 +36,10 @@
     /* --- MOBILE --- */
     @media (max-width: 768px) {
         position: relative;
-        flex-direction: row; // ← Ändere zu row statt column!
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap; // Damit das ul in die nächste Zeile rutscht
+        flex-wrap: wrap;
         gap: 0;
         width: 100%;
 
@@ -50,19 +50,25 @@
         .menu-toggle {
             display: block;
             flex: 0 0 auto;
+            order: 2; // ← Toggle nach h1
         }
 
         ul {
             display: none;
             flex-direction: column;
-            width: 100%;
-            gap: 1rem;
-            padding: 0;
-            order: 3; // Schiebt das ul nach unten
+            gap: 0.5rem;
+            padding: 1rem;
+            margin-top: 0;
+            align-self: flex-end;
+            margin-left: auto;
+            position: absolute;
+            top: 100%;
+            right: 0;
         }
 
         &.open ul {
             display: flex;
         }
     }
+
 }

@@ -1,8 +1,8 @@
-@use "variables";
-@use "navbar";
-@use "about";
-@use "projects";
-@use "contact";
+@import "variables";
+@import "navbar";
+@import "about";
+@import "projects";
+@import "contact";
 
 body {
     margin: 0;

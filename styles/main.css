@@ -5,14 +5,14 @@
   padding: 1rem 2rem;
   background-color: #ffffff;
 }
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #4f46e5;
+}
 .navbar .menu-toggle {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #4f46e5;
-}
-.navbar h1 {
-  font-size: 1.5rem;
   color: #4f46e5;
 }
 .navbar ul {
@@ -32,13 +32,21 @@
   /* --- MOBILE --- */
 }
 @media (max-width: 768px) {
-  .navbar .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+  .navbar {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    width: 100%;
+  }
+  .navbar h1 {
+    flex: 0 0 auto;
   }
   .navbar .menu-toggle {
     display: block;
+    flex: 0 0 auto;
   }
   .navbar ul {
     display: none;
@@ -46,6 +54,7 @@
     width: 100%;
     gap: 1rem;
     padding: 0;
+    order: 3;
   }
   .navbar.open ul {
     display: flex;
@@ -203,4 +212,4 @@ h3 {
   word-wrap: break-word;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

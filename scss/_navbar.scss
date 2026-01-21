@@ -1,5 +1,3 @@
-@use "variables" as *;
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,13 +35,21 @@
 
     /* --- MOBILE --- */
     @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+        position: relative;
+        flex-direction: row; // ← Ändere zu row statt column!
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; // Damit das ul in die nächste Zeile rutscht
+        gap: 0;
         width: 100%;
+
+        h1 {
+            flex: 0 0 auto;
+        }
 
         .menu-toggle {
             display: block;
+            flex: 0 0 auto;
         }
 
         ul {
@@ -52,6 +58,7 @@
             width: 100%;
             gap: 1rem;
             padding: 0;
+            order: 3; // Schiebt das ul nach unten
         }
 
         &.open ul {

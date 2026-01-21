@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #d1f8ff;
+  background-color: #c8d8e4;
 }
 .navbar h1 {
   font-size: 1.5rem;
@@ -107,8 +107,8 @@
 }
 
 .projects-section {
-  padding: 4rem 2rem;
-  background-color: #d1f8ff;
+  padding: 2rem;
+  background-color: #c8d8e4;
   text-align: left;
 }
 .projects-section h2 {

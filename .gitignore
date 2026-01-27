@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# SCSS Build / Source Maps
+*.map
+
+# Logs
+*.log
+
+# Environment / Secrets (für später)
+.env
+.env.*
+
+# Node (falls später JS-Tools dazukommen)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build output
+dist/
+build/
